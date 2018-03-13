@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "What to do",
+  "description" : "Simple to do list",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches":  [
+        "<all_urls>"
+    ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon":"wtd-icon.png",
+    "default_title": "What-to-do",
+    "default_popup": "index.html",
+    "default_title": "Your simple to do list"
+  }
+
+
+}
