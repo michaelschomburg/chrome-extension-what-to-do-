@@ -9,15 +9,21 @@
         "<all_urls>"
     ],
       "js": [
-        "content.js"
+        "js/content.js",
+        "js/background.js",
+        "js/jquery-3.2.1.min.js",
+        "js/jquery-3.3.1.min.js",
+        "js/function.js"
+
       ]
     }
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["js/background.js"]
   },
+  "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
   "browser_action": {
-    "default_icon":"wtd-icon.png",
+    "default_icon":"assets/wtd-icon.png",
     "default_title": "What-to-do",
     "default_popup": "index.html",
     "default_title": "Your simple to do list"
