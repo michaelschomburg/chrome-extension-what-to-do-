@@ -1,0 +1,10 @@
+.header {
+  @include flexy($just: space-between);
+  height: px-to-pc(15px);
+  div {
+    @include flexy();
+    text-align: center;
+    width: 50%;
+    background: $primary-gradient;
+  }
+}

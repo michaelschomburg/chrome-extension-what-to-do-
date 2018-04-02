@@ -1,8 +1,13 @@
+//hide text textarea on start
+// $(".textarea-wrapper").hide();
+
 // input grab function
 window.addEventListener('load', function (event){
     var createButton = document.getElementById('add');
     createButton.addEventListener('click', function() { getValue(); });
 });
+//hide text textarea on start
+$(".textarea-wrapper").hide();
 
 
 function getValue() {
@@ -13,3 +18,4 @@ function getValue() {
    document.getElementById("list").appendChild(item);
    return;
 };
+$
