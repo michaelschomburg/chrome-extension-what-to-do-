@@ -1,10 +1,25 @@
 .header {
   @include flexy($just: space-between);
-  height: px-to-pc(15px);
+  @include WiHe(100%, px-to-pc(15px));
+  border-bottom: 1px solid $primary-grey;
+
   div {
     @include flexy();
+    @include WiHe(50%, 100%);
+
+  }
+  a {
+    line-height: 22px;
     text-align: center;
-    width: 50%;
+    width: 100%;
+    color: $text-color-header;
+    outline: none;
+    text-decoration: none;
+    background: $white;
+  }
+  .current {
+    transition: all 0.4s ease-in-out;
     background: $primary-gradient;
+    color: $primary-grey-light;
   }
 }

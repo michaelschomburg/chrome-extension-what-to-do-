@@ -1,3 +1,19 @@
 .main-wrapper {
   height: 100%;
 }
+
+.action-field {
+  @include flexy();
+  @include WiHe(100% , px-to-pc(350px));
+
+  div {
+    @include WiHe(100% , 100%);
+  }
+  .text{
+    max-width: 100%;
+    @include WiHe(100% , 100%);
+    background-color: $background-color;
+    outline: none;
+    border: none;
+  }
+}

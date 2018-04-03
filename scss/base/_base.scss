@@ -1,12 +1,12 @@
 html {
   height: 550px;
-  width: 250px;
+  width: 350px;
 }
 
 body {
   margin: 0;
   position: relative;
   height: 100%;
-  background-color: rgb(246, 246, 246);
+  background-color: $background-color;
   font-family: $primary-font;
 }

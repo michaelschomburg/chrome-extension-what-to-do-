@@ -1,21 +1,18 @@
-//hide text textarea on start
-// $(".textarea-wrapper").hide();
-
-// input grab function
-window.addEventListener('load', function (event){
-    var createButton = document.getElementById('add');
-    createButton.addEventListener('click', function() { getValue(); });
-});
-//hide text textarea on start
-$(".textarea-wrapper").hide();
+$(document).ready(function(){
+  $(".to-remember").hide();
 
 
-function getValue() {
-   var inputtext = document.getElementById('inputfield').value;
-   var item = document.createElement("LI");
-   var text = document.createTextNode(inputtext);
-   item.appendChild(text);
-   document.getElementById("list").appendChild(item);
-   return;
-};
-$
+  $("div.header .what-to-do").click(function(){
+    $("div.header .what-to-remember a").removeClass('current');
+    $("div.header .what-to-do a").addClass('current');
+    $(".to-remember").hide();
+    $(".to-do").show();
+  })
+
+  $("div.header .what-to-remember").click(function(){
+    $("div.header .what-to-do a").removeClass('current');
+    $("div.header .what-to-remember a").addClass('current');
+    $(".to-do").hide();
+    $(".to-remember").show();
+  })
+})

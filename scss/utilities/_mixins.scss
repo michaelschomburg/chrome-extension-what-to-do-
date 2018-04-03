@@ -10,3 +10,8 @@
   flex-wrap: $wrap;
   justify-content: $just;
   }
+
+  @mixin WiHe($w, $h) {
+    width: $w;
+    height: $h;
+  }
