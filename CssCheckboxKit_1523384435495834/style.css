@@ -1,43 +1,10 @@
-.list {
-  @include WiHe(90%, auto);
-  padding-top: 3.5%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-.list-item {
-  @include flexy($dir: row);
-  align-items: center;
-}
-  li{
-    margin-top: 15px;
-  }
-
-  .checkbox {
-    margin-right: 1rem;
-    visibility: hidden;
-  }
-
-  button {
-    @include decoration($brd: none);
-    @include WiHe(1rem, 1rem);
-    margin-left: auto;
-    background-image: url(../assets/bin.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    background-color: transparent;
-  }
-}
-
-
 input[type=checkbox].css-checkbox {
 							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 						}
 
 						input[type=checkbox].css-checkbox + label.css-label {
 							padding-left:21px;
-							height:16px;
-              width: 17px;
+							height:16px; 
 							display:inline-block;
 							line-height:16px;
 							background-repeat:no-repeat;

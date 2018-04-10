@@ -1,0 +1,14 @@
+.add-button {
+  @include decoration($brd: none);
+  @include WiHe(1.3rem, 1.3rem);
+  background-image: url(../assets/addbutton.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-color: transparent;
+
+}
+
+.add-button:active {
+  opacity: 0.5;
+}

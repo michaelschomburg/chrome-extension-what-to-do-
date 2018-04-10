@@ -1,9 +1,33 @@
 
+document.addEventListener('DOMContentLoaded', function(){
+  document.getElementById('add-button').addEventListener("click", add)
+});
 
-// // Save it using the Chrome extension storage API.
-//  chrome.storage.sync.set({'text': 'notes'}, function() {
-//    console.log('Settings saved');
-//  });
+function add() {
+  let list = document.getElementById('list');
+  let toDoValue =  document.getElementById('entry-field').value;
+  let toDoItem = document.createElement('li');
+  let input = document.createElement('input');
+  let itemLabel = document.createElement('label');
+
+  if (toDoValue == "") {
+    return;
+  } else {
+  input.setAttribute('type','checkbox');
+  input.setAttribute('id', 'check')
+  input.setAttribute('class', 'css-checkbox')
+  itemLabel.setAttribute('for', 'check')
+  itemLabel.setAttribute('class', 'css-label')
+  toDoItem.setAttribute('class', 'list-item');
+  toDoItem.appendChild(input);
+  toDoItem.appendChild(itemLabel);
+  toDoItem.appendChild(document.createTextNode(toDoValue));
+  toDoItem.appendChild(document.createElement('BUTTON'));
+  list.appendChild(toDoItem);
+  }
+}
+
+
 
 $(document).ready(function(){
   $(".to-remember").hide();
