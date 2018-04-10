@@ -481,7 +481,7 @@ body {
     outline: none; }
   .entry .add-button {
     outline: none;
-    background-image: url(../assets/addbutton@2x.png);
+    background-image: url(../assets/addbutton.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
