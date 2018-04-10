@@ -15,11 +15,11 @@
     color: $text-color-header;
     outline: none;
     text-decoration: none;
-    background: $white;
+    background: $background-color;
   }
   .current {
     transition: all 0.4s ease-in-out;
     background: $primary-gradient;
-    color: $primary-grey-light;
+    color: $background-color;
   }
 }

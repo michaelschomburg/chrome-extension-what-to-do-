@@ -1,39 +1,30 @@
 .entry {
-  @include WiHe(85%, 2rem);
+  @include WiHe(90%, 2.1rem);
   @include flexy($just: space-around);
   align-items: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
   border-bottom: 1px solid $primary-grey;
   margin-left: auto;
   margin-right: auto;
 .entry-field {
-  width: 80%;
-  height: 30%;
-  @include decoration();
+  @include WiHe(80%, 1rem);
+  @include decoration($brd: none);
+  background-color: $primary-grey-light;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.6rem;
+  font-weight: lighter;
+  font-family: $primary-font;
+  border-radius: 0.2rem;
 
 }
 .add-button {
-    @include decoration();
-    background-image: url(../assets/addbutton.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    /* put the height and width of your image here */
-    height: 1.8rem;
-    width: 1.8rem;
-    border: none;
-  }
-
+  @include decoration($brd: none);
+  @include WiHe(1.3rem, 1.3rem);
+  background-image: url(../assets/addbutton.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-color: transparent;
 }
-
-//
-// .entry:after {
-//     content : "";
-//     position: absolute;
-//     left    : 0;
-//     bottom  : 0;
-//     height  : 1px;
-//     width   : 50%;  /* or 100px */
-//     border-bottom: 1px solid $primary-grey;
-//   }
+}

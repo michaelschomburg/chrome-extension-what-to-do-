@@ -4,13 +4,18 @@
 
 .action-field {
   @include flexy($just: center);
+  @include WiHe(100%, 100%);
   .to-do {
+    @include WiHe(100%, 100%);
+  }
+  .to-remember{
     @include WiHe(100%, 100%);
   }
   .txt{
     max-width: 100%;
     @include WiHe(94% , 94%);
     @include decoration($rzs: none , $brd: none);
+    font-family: $primary-font;
     background-color: $background-color;
     padding: 4%;
   }
