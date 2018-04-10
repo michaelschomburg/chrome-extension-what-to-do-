@@ -1,0 +1,29 @@
+// flex mixin
+
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  }
+
+  @mixin WiHe($w, $h) {
+    width: $w;
+    height: $h;
+  }
+
+  @mixin decoration (
+    $otln: none,
+    $brd: null,
+    $ovrflw: null,
+    $rzs: null
+  ) {
+    outline: $otln;
+    border: $brd;
+    overflow: $ovrflw;
+    resize: $rzs;
+  }

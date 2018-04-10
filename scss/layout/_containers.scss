@@ -1,0 +1,17 @@
+.main-wrapper {
+  height: 100%;
+}
+
+.action-field {
+  @include flexy($just: center);
+  .to-do {
+    @include WiHe(100%, 100%);
+  }
+  .txt{
+    max-width: 100%;
+    @include WiHe(94% , 94%);
+    @include decoration($rzs: none , $brd: none);
+    background-color: $background-color;
+    padding: 4%;
+  }
+}

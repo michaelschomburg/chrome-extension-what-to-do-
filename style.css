@@ -1,3 +1,61 @@
+<<<<<<< HEAD
 body {
    background-color: ligh blue;
   }
+=======
+/* =================================
+  Base Element Styles
+==================================== */
+html {
+  height: 550px;
+  width: 250px;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/*General*/
+
+/*Navigation*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* this is just to test */
+
+
+/*What to remember*/
+
+
+
+/*What to do*/
+
+/*Footer*/
+
+
+/* =================================
+  Media queries
+==================================== */
+
+@media  (min-width:768px) {
+
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+
+}
+>>>>>>> michael-test-branch
