@@ -15,3 +15,15 @@
     width: $w;
     height: $h;
   }
+
+  @mixin decoration (
+    $otln: none,
+    $brd: null,
+    $ovrflw: null,
+    $rzs: null
+  ) {
+    outline: $otln;
+    border: $brd;
+    overflow: $ovrflw;
+    resize: $rzs;
+  }

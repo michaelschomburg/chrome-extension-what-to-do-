@@ -412,7 +412,8 @@ ul, ol {
 
 html {
   height: 550px;
-  width: 350px; }
+  width: 350px;
+  box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -426,18 +427,19 @@ body {
 
 .action-field {
   display: flex;
-  width: 100%;
-  height: 100%; }
-  .action-field div {
+  justify-content: center; }
+  .action-field .to-do {
     width: 100%;
     height: 100%; }
-  .action-field .text {
+  .action-field .txt {
     max-width: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: #f6f6f6;
+    width: 94%;
+    height: 94%;
     outline: none;
-    border: none; }
+    border: none;
+    resize: none;
+    background-color: #f6f6f6;
+    padding: 4%; }
 
 .header {
   display: flex;
@@ -461,6 +463,32 @@ body {
     transition: all 0.4s ease-in-out;
     background: linear-gradient(to right, #7FF0B6, #32ACBE);
     color: #F2F2F2; }
+
+.entry {
+  width: 85%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #CCCCCC;
+  margin-left: auto;
+  margin-right: auto; }
+  .entry .entry-field {
+    width: 80%;
+    height: 30%;
+    outline: none; }
+  .entry .add-button {
+    outline: none;
+    background-image: url(../assets/addbutton@2x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    /* put the height and width of your image here */
+    height: 1.8rem;
+    width: 1.8rem;
+    border: none; }
 
 /* =================================
   Media queries

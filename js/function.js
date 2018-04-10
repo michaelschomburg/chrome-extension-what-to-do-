@@ -1,6 +1,12 @@
+
+
+// // Save it using the Chrome extension storage API.
+//  chrome.storage.sync.set({'text': 'notes'}, function() {
+//    console.log('Settings saved');
+//  });
+
 $(document).ready(function(){
   $(".to-remember").hide();
-
 
   $("div.header .what-to-do").click(function(){
     $("div.header .what-to-remember a").removeClass('current');
@@ -15,4 +21,4 @@ $(document).ready(function(){
     $(".to-do").hide();
     $(".to-remember").show();
   })
-})
+});
