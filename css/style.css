@@ -484,9 +484,8 @@ body {
     align-items: center; }
   .list li {
     margin-top: 15px; }
-  .list .checkbox {
-    margin-right: 1rem;
-    visibility: hidden; }
+  .list .css-checkbox {
+    margin-right: 1rem; }
   .list button {
     outline: none;
     border: none;
@@ -498,42 +497,6 @@ body {
     background-position: 50% 50%;
     background-size: contain;
     background-color: transparent; }
-
-input[type=checkbox].css-checkbox {
-  position: absolute;
-  z-index: -1000;
-  left: -1000px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0; }
-
-input[type=checkbox].css-checkbox + label.css-label {
-  padding-left: 21px;
-  height: 16px;
-  width: 17px;
-  display: inline-block;
-  line-height: 16px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 16px;
-  vertical-align: middle;
-  cursor: pointer; }
-
-input[type=checkbox].css-checkbox:checked + label.css-label {
-  background-position: 0 -16px; }
-
-label.css-label {
-  background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_488bbb06ac44bc09a3bd3b102933c76f.png);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
 
 .add-button {
   outline: none;
