@@ -8,6 +8,7 @@
   .to-do {
     @include WiHe(100%, 100%);
   }
+
   .to-remember{
     @include WiHe(100%, 100%);
   }
@@ -19,4 +20,10 @@
     background-color: $background-color;
     padding: 4%;
   }
+}
+
+.text-formating {
+  @include flexy($just: space-between);
+  @include WiHe(100%, px-to-pc(15px));
+  border-top: 1px solid $primary-grey;
 }

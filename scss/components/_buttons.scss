@@ -12,3 +12,20 @@
 .add-button:active {
   opacity: 0.5;
 }
+
+
+.bold,
+.italic,
+.underline {
+  @include decoration ($brd: none);
+  @include flexy($just: center, $dir: row);
+  @include WiHe(33.33333%, 100%);
+
+  background-color: none;
+}
+
+.clicked {
+  @include decoration ($brd: none);
+  background-color: #00A99D;
+
+}

@@ -31,7 +31,13 @@
     "default_title": "What-to-do",
     "default_popup": "index.html",
     "default_title": "Your simple to do list"
-  }
+  },
+
+  "options_ui": {
+    "page": "index.html"
+    }
+
+
 
 
 }
