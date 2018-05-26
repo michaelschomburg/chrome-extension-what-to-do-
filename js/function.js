@@ -3,6 +3,7 @@
 
     document.addEventListener('DOMContentLoaded', function(){
       document.getElementById('add-button').addEventListener("click", add);
+      document.getElementById('add-button').addEventListener("onkeypress", add);
       // document.getElementById('test-button').addEventListener("change", checkBox);
       document.getElementById('txt').addEventListener("mouseout", save)
       });
@@ -102,6 +103,7 @@
       let toDoValue = document.getElementById('entry-field').value;
       chrome.storage.sync.set({[listLe]: toDoValue}, function() {
       render(toDoValue)
+      document.getElementById('entry-field').value = '';
       });
 
     }
