@@ -3,8 +3,7 @@
 
     document.addEventListener('DOMContentLoaded', function(){
       document.getElementById('add-button').addEventListener("click", add);
-      document.getElementById('add-button').addEventListener("onkeypress", add);
-      // document.getElementById('test-button').addEventListener("change", checkBox);
+      document.getElementById('add-button').addEventListener("keyup", add);
       document.getElementById('txt').addEventListener("mouseout", save)
       });
 
@@ -28,23 +27,21 @@
         $(".to-do").hide();
         $(".to-remember").show();
       })
-// this changes te color on click
-      // $('.bold, .italic, .underline').click(function() {
-      //   $(this).toggleClass("clicked");
-      // })
 
         $("#bold").click(function() {
-          document.execCommand('bold', false, null);
+          document.execCommand('bold');
+          if()
           $(this).toggleClass("clicked");
         });
 
+
         $("#italic").click(function() {
-          document.execCommand('italic', false, null);
-          $(this).toggleClass("clicked");
+             document.execCommand('italic');
+             $(this).toggleClass("clicked");
         });
 
         $("#underline").click(function() {
-          document.execCommand('underline', false, null);
+          document.execCommand('underline');
           $(this).toggleClass("clicked");
         });
     });
@@ -61,7 +58,7 @@
 
     chrome.storage.sync.get("text", function(items) {
       if(!chrome.runtime.error) {
-        document.getElementById("txt").innerText = items.text;
+        document.getElementById("txt").innerHTML = items.text;
       }
     })
 
@@ -110,7 +107,8 @@
 
 // Event Function: save note text to storage on change
     function save() {
-      let saveText = document.getElementById('txt').textContent;
+      let saveText = document.getElementById('txt').innerHTML;
+      // document.execCommand('insertHTML',false,'<br>');
       chrome.storage.sync.set({"text" : saveText}, function() {
       });
     }
@@ -137,3 +135,32 @@
         li.style.color = "#CCCCCC";
       }
     }
+    //
+    //
+    // function getSelectionHtml() {
+    //     var html = "";
+    //     if (typeof window.getSelection != "undefined") {
+    //         var sel = window.getSelection();
+    //         if (sel.rangeCount) {
+    //             var container = document.createElement("div");
+    //             for (var i = 0, len = sel.rangeCount; i < len; ++i) {
+    //                 container.appendChild(sel.getRangeAt(i).cloneContents());
+    //             }
+    //             html = container.innerHTML;
+    //         }
+    //     } else if (typeof document.selection != "undefined") {
+    //         if (document.selection.type == "Text") {
+    //             html = document.selection.createRange().htmlText;
+    //         }
+    //     }
+    //     return html;
+    // }
+    //
+    //
+    // // bind events for selection
+    //
+    // document.addEventListener('mouseup', function(){
+    //   var selectedHTML = getSelectionHtml();
+    //   if( selectedHTML )
+    //     console.log( selectedHTML )
+    // });
