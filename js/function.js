@@ -30,7 +30,6 @@
 
         $("#bold").click(function() {
           document.execCommand('bold');
-          if()
           $(this).toggleClass("clicked");
         });
 
